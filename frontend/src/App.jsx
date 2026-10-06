@@ -8,8 +8,7 @@ function App() {
 
   useEffect(() => {
     // This will connect to your local backend for now
-    fetch("http://localhost:3000/patients")
-        .then((res) => res.json())
+      fetch("https://clinicflow-backend-agus.onrender.com/patients")        .then((res) => res.json())
         .then((data) => {
           setPatients(data);
           setLoading(false);
